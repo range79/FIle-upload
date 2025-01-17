@@ -3,6 +3,8 @@ package com.range.Fileupload.Model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -13,7 +15,7 @@ import java.util.List;
 @Table(name = "users")
 public class User implements UserDetails {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Email
@@ -23,10 +25,17 @@ public class User implements UserDetails {
     private String username;
 
     private String password;
-   @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING)
     private Role role;
+    @OneToMany(mappedBy = "user")
 
+    private List<File> files;
 
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+
+        return List.of(role);
+    }
     public void setUsername(String username) {
         this.username = username;
     }
@@ -35,11 +44,6 @@ public class User implements UserDetails {
     @Override
     public String getUsername() {
         return username;
-    }
-
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(role);
     }
 
     public Role getRole() {

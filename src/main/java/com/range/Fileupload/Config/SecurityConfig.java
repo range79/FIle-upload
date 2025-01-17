@@ -1,5 +1,6 @@
 package com.range.Fileupload.Config;
 
+import com.range.Fileupload.Model.Role;
 import com.range.Fileupload.Service.impl.UserDetailsServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,15 +26,16 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable)
                 .formLogin(login->login.loginPage("/login").permitAll().usernameParameter("email")
-                        .passwordParameter("password").defaultSuccessUrl("/index"))
+                        .passwordParameter("password").defaultSuccessUrl("/File-upload"))
                 .authorizeHttpRequests(
                         authorizeRequests ->
-                                authorizeRequests.requestMatchers("/register").permitAll()
+                                authorizeRequests
 
-                                        .requestMatchers("/forgot-password").permitAll()
 
-                                        .anyRequest().authenticated()
-                );
+                                        .requestMatchers("/register","/forgot-password").permitAll()
+
+                                        .requestMatchers("/File-upload").hasAuthority(Role.User.getAuthority())
+                                        .anyRequest().authenticated());
         return http.build();
     }
     @Bean

@@ -11,4 +11,4 @@ spring:
       password: somepass
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create

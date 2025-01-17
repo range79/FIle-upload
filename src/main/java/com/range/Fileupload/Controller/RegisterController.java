@@ -28,7 +28,7 @@ public class RegisterController {
         try{
 this.userServiceIMPL.register(userDTO);
 model.addAttribute("successMessage","Register Success");
-            System.out.println("Register Success");
+
 return "login";
         }catch (Exception e){
             model.addAttribute("errorMessage",e.getMessage());
