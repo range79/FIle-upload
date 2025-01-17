@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayıt Ol</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .login-container {
+      background: #fff;
+      color: #333;
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      transform: translateY(-30px);
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #6a11cb;
+      margin-bottom: 20px;
+      animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+      position: relative;
+      animation: bounceIn 1s ease-out;
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #333;
+      transition: all 0.3s ease;
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      background-color: #fff;
+      padding: 0 5px;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.3s ease;
+      animation: slideInInput 1s ease-out;
+    }
+
+    @keyframes slideInInput {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .form-group input:focus {
+      border-color: #6a11cb;
+      box-shadow: 0 0 10px rgba(106, 17, 203, 0.6);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 15px;
+      background: #6a11cb;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      animation: pulseBtn 1s infinite;
+    }
+
+    @keyframes pulseBtn {
+      0% {
+        transform: scale(1);
+        background-color: #6a11cb;
+      }
+      50% {
+        transform: scale(1.05);
+        background-color: #2575fc;
+      }
+      100% {
+        transform: scale(1);
+        background-color: #6a11cb;
+      }
+    }
+
+    .btn:hover {
+      background: #2575fc;
+      transform: scale(1.05);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .links {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .links a {
+      color: #6a11cb;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      animation: fadeInLink 1s ease-out;
+    }
+
+    @keyframes fadeInLink {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .links a:hover {
+      color: #2575fc;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .login-container {
+        padding: 20px 30px;
+      }
+
+      .form-group label {
+        font-size: 14px;
+      }
+
+      .form-group input {
+        font-size: 14px;
+      }
+
+      .btn {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="login-container">
+  <h1>Kayıt Ol</h1>
+  <form th:action="@{/register}" method="post">
+    <div class="form-group">
+      <label for="username">Kullanıcı Adı</label>
+      <input type="text" id="username" name="username" placeholder="Kullanıcı adınızı girin" required>
+    </div>
+    <div class="form-group">
+      <label for="email">E-posta Adresiniz</label>
+      <input type="email" id="email" name="email" placeholder="example@example.com" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Şifreniz</label>
+      <input type="password" id="password" name="password" placeholder="Şifrenizi girin" required>
+    </div>
+    <button type="submit" class="btn">Kayıt Ol</button>
+  </form>
+  <div class="links">
+    <a th:href="@{/login}">Zaten hesabınız var mı? Giriş Yapın</a>
+  </div>
+</div>
+</body>
+</html>

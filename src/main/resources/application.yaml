@@ -1,0 +1,14 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+  datasource:
+    url: jdbc:mysql://mysql:3306/testdb
+    hikari:
+      username: range
+      password: somepass
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
