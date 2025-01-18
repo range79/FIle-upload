@@ -1,10 +1,8 @@
-package com.range.Fileupload.Model;
+package com.range.Fileupload.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -31,11 +29,7 @@ public class User implements UserDetails {
 
     private List<File> files;
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
 
-        return List.of(role);
-    }
     public void setUsername(String username) {
         this.username = username;
     }
@@ -55,6 +49,10 @@ public class User implements UserDetails {
     }
 
 
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of(role);
+    }
 
     public String getPassword() {
         return password;

@@ -1,6 +1,6 @@
 package com.range.Fileupload.Service;
 
-import com.range.Fileupload.DTO.UserDTO;
+import com.range.Fileupload.dto.UserDTO;
 
 public interface UserService {
 

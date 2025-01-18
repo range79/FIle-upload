@@ -1,6 +1,6 @@
-package com.range.Fileupload.Controller;
+package com.range.Fileupload.controller;
 
-import com.range.Fileupload.DTO.UserDTO;
+import com.range.Fileupload.dto.UserDTO;
 import com.range.Fileupload.Service.impl.UserServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

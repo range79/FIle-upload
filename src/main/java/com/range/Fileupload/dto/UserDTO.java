@@ -1,4 +1,4 @@
-package com.range.Fileupload.DTO;
+package com.range.Fileupload.dto;
 
 
 

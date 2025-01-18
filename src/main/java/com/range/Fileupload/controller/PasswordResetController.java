@@ -1,6 +1,6 @@
-package com.range.Fileupload.Controller;
+package com.range.Fileupload.controller;
 
-import com.range.Fileupload.DTO.ResetPasswordDto;
+import com.range.Fileupload.dto.ResetPasswordDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,11 +1,11 @@
 package com.range.Fileupload.Service.impl;
 
-import com.range.Fileupload.Config.MYPasswordEncoder;
-import com.range.Fileupload.DTO.UserDTO;
-import com.range.Fileupload.Exception.DatabaseException;
-import com.range.Fileupload.Exception.UserNotFoundException;
-import com.range.Fileupload.Model.Role;
-import com.range.Fileupload.Model.User;
+import com.range.Fileupload.config.MYPasswordEncoder;
+import com.range.Fileupload.dto.UserDTO;
+import com.range.Fileupload.exception.DatabaseException;
+import com.range.Fileupload.exception.UserNotFoundException;
+import com.range.Fileupload.model.Role;
+import com.range.Fileupload.model.User;
 import com.range.Fileupload.Repo.UserRepository;
 import com.range.Fileupload.Service.UserService;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,6 +1,6 @@
 package com.range.Fileupload.Service.impl;
 
-import com.range.Fileupload.Exception.EmailNullException;
+import com.range.Fileupload.exception.EmailNullException;
 import com.range.Fileupload.Repo.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

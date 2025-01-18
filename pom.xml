@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.range</groupId>
 	<artifactId>FIleupload</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1T</version>
 	<name>FIleupload</name>
 	<description>File upload server make with spring boot</description>
 	<url/>

@@ -1,4 +1,4 @@
-package com.range.Fileupload.DTO;
+package com.range.Fileupload.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;

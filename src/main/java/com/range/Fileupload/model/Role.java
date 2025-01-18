@@ -1,4 +1,4 @@
-package com.range.Fileupload.Model;
+package com.range.Fileupload.model;
 
 import org.springframework.security.core.GrantedAuthority;
 
