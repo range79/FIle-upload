@@ -1,4 +1,4 @@
-package com.range.fileupload.file.Mapper;
+package com.range.fileupload.file.mapper;
 
 import com.range.fileupload.file.model.MyFile;
 

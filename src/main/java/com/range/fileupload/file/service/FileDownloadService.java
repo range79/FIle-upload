@@ -1,4 +1,4 @@
-package com.range.fileupload.file.Service;
+package com.range.fileupload.file.service;
 
 import com.range.fileupload.file.model.MyFile;
 

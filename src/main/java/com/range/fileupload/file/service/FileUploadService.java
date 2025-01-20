@@ -1,4 +1,4 @@
-package com.range.fileupload.file.Service;
+package com.range.fileupload.file.service;
 
 import org.springframework.web.multipart.MultipartFile;
 

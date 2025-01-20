@@ -125,14 +125,14 @@ Bu proje **MIT Lisansı** ile lisanslanmıştır. Detayları aşağıda bulabili
 ## Projedeki değişiklik günlüğü
 
 1. **Version 1.0.0**
-   - ilk sürüm olduğundan çokta fazla sey eklemedimç
+   - ilk sürüm olduğundan çokta fazla sey eklemedim.
 
 
 
 2. **Version 2.0.0**
    - bu sürümde file upload servisini düzenledim ve artik dosya yükleniyor ve upload klasörüne yazıyor .
 3. **Version 2.1.0**
-   - Bu sürümde proje daha modüler yapıldı artık user ıle file ayri dizinde 
+   - Bu sürümde proje daha modüler yapıldı artık kullanici islemleri ıle dosya işlemleri ayri dizinde. 
 
 
 ```plaintext

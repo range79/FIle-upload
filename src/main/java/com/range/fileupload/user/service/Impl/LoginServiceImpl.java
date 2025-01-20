@@ -1,6 +1,6 @@
 package com.range.fileupload.user.service.Impl;
 
-import com.range.fileupload.user.Repository.UserRepository;
+import com.range.fileupload.user.repository.UserRepository;
 import com.range.fileupload.user.service.LoginService;
 import com.range.fileupload.config.MYPasswordEncoder;
 import com.range.fileupload.exception.UserNotFoundException;

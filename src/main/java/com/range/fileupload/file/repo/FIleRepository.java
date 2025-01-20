@@ -1,4 +1,4 @@
-package com.range.fileupload.file.Repo;
+package com.range.fileupload.file.repo;
 
 import com.range.fileupload.file.model.MyFile;
 import org.springframework.data.jpa.repository.JpaRepository;

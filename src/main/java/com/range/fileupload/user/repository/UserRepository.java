@@ -1,4 +1,4 @@
-package com.range.fileupload.user.Repository;
+package com.range.fileupload.user.repository;
 
 import com.range.fileupload.exception.UserNotFoundException;
 import com.range.fileupload.user.model.User;

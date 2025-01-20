@@ -1,6 +1,6 @@
 package com.range.fileupload.file.controller;
 
-import com.range.fileupload.file.Service.impl.FileUploadServiceUploadImpl;
+import com.range.fileupload.file.service.impl.FileUploadServiceUploadImpl;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;

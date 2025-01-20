@@ -1,9 +1,9 @@
-package com.range.fileupload.file.Service.impl;
+package com.range.fileupload.file.service.impl;
 
-import com.range.fileupload.file.Mapper.FileMapper;
-import com.range.fileupload.file.Repo.FIleRepository;
-import com.range.fileupload.user.Repository.UserRepository;
-import com.range.fileupload.file.Service.FileUploadService;
+import com.range.fileupload.file.mapper.FileMapper;
+import com.range.fileupload.file.repo.FIleRepository;
+import com.range.fileupload.user.repository.UserRepository;
+import com.range.fileupload.file.service.FileUploadService;
 import com.range.fileupload.file.model.MyFile;
 import com.range.fileupload.user.model.User;
 import org.springframework.stereotype.Service;
