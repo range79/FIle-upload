@@ -16,25 +16,21 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Email
+    @Email@Column(unique = true)
     private String email;
 
     @NotBlank
+    @Column(unique = true)
     private String username;
 
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
     @OneToMany(mappedBy = "user")
-
-    private List<File> files;
-
-
+    private List<MyFile> myFiles;
     public void setUsername(String username) {
         this.username = username;
     }
-
-
     @Override
     public String getUsername() {
         return username;

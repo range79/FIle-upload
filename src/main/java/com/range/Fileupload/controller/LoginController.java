@@ -29,7 +29,7 @@ public class LoginController  {
         try {
             boolean authenticated = userServiceImpl.authenticate(userDTO.getEmail(), userDTO.getPassword());
             if (authenticated) {
-                return "redirect:/home";  // Anasayfaya yönlendir
+                return "redirect:/File-upload";  // Anasayfaya yönlendir
             } else {
                 model.addAttribute("error", "Geçersiz e-posta veya şifre.");
                 return "login";

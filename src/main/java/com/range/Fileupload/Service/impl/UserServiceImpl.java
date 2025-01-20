@@ -3,6 +3,8 @@ package com.range.Fileupload.Service.impl;
 import com.range.Fileupload.config.MYPasswordEncoder;
 import com.range.Fileupload.dto.UserDTO;
 import com.range.Fileupload.exception.DatabaseException;
+import com.range.Fileupload.exception.EmailRegistered;
+import com.range.Fileupload.exception.EmailRegisteredException;
 import com.range.Fileupload.exception.UserNotFoundException;
 import com.range.Fileupload.model.Role;
 import com.range.Fileupload.model.User;
@@ -26,6 +28,12 @@ public class UserServiceImpl implements UserService {
 
     public String register(UserDTO userDTO) {
         try{
+          UserDetails searchUser=  userRepository.findByEmail(userDTO.getEmail());
+//User user = userRepository.findByUsername(userDTO)
+
+          if(searchUser!=null){
+throw new EmailRegisteredException();
+          }
             User user = new User();
             user.setEmail(userDTO.getEmail());
             user.setUsername(userDTO.getUsername());

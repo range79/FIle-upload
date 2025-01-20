@@ -1,25 +1,5 @@
 package com.range.Fileupload.dto;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 public class UserDTO {
     private String email;
     private String password;

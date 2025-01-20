@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "files")
-public class File {
+public class MyFile {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long fileId;
@@ -13,17 +13,14 @@ public class File {
     @JoinColumn(name="user_id",nullable = false)
     private User user;
     @Lob
-    private byte data;
-    public byte getData() {
+    private byte[] data;
+    public byte[] getData() {
         return data;
     }
 
-    public void setData(byte data) {
+    public void setData(byte[] data) {
         this.data = data;
     }
-
-
-
 
     public Long getFileId() {
         return fileId;
