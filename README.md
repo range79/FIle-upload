@@ -76,24 +76,19 @@ Projenin frontend kısmı hazır bir şablondan alınmıştır ve geliştirme ya
 şablonu HTML, CSS ve JavaScript teknolojilerini kullanmaktadır. Statik dosyalar `src/main/resources/static` klasörü
 altında tutulmaktadır.
 
----
+**Ekran Görüntüleri**:
 
-## Uygulamadan Görüntüler
+**Login Sayfası:**
 
-Aşağıda uygulamadan bazı ekran görüntüleri bulunmaktadır:
+![Login](screenshots/login.png)
 
-### Kullanici giris sayfasi
+**Register Sayfası:**
 
-![Kullanici_giris](screenshots/login.png)
+![Register](screenshots/register.png)
 
-### Kullanici kayit sayfasi
+**Dosya Yükleme Sayfası:**
 
-![kayit](screenshots/register.png)
-
-### Dosya Yükleme Sayfası
-
-![dosya_yukleme_sayfasi](screenshots/upload.png)
-
+![Upload](screenshots/upload.png)
 
 ---
 
@@ -141,3 +136,8 @@ Copyright (c) 2023 range79
 
 YAZILIM "OLDUĞU GİBİ" SAĞLANIR, TİCARİLİK, BELİRLİ BİR AMACA UYGUNLUK VEYA HAK İHLALİ OLMADIĞINA DAİR HERHANGİ BİR GARANTİ OLMAKSIZIN, AÇIK YA DA ZIMNİ HİÇBİR GARANTİ VERİLMEZ. YAZILIMDAN YA DA KULLANIMINDAN KAYNAKLANAN HİÇBİR ZARARDAN, YAZARLAR VEYA TELİF HAKKI SAHİPLERİ SORUMLU DEĞİLDİR.
 ```
+
+---
+
+Bu taslağı doğrudan kopyalayıp, projenize uygun şekilde özelleştirebilirsiniz. Frontend ile ilgili detayları daha da
+açık yazmak isterseniz bana tekrar sorabilirsiniz! 😊
