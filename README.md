@@ -1,9 +1,13 @@
 # FIleupload
 
 ## Açıklama
-FIleupload, **Spring Boot** kullanılarak geliştirilmiş bir dosya yükleme sunucusudur. Bu proje, backend kısmında Spring Boot teknolojilerini kullanmakta ve frontend kısmı ise hazır bir kaynaktan temin edilmiştir (*örneğin*: bir açık kaynak frontend şablonu).
+
+FIleupload, **Spring Boot** kullanılarak geliştirilmiş bir dosya yükleme sunucusudur. Bu proje, backend kısmında Spring
+Boot teknolojilerini kullanmakta ve frontend kısmı ise hazır bir kaynaktan temin edilmiştir (*örneğin*: bir açık kaynak
+frontend şablonu).
 
 ## Özellikler
+
 - **Spring Data JPA** ile veri tabanı işlemleri.
 - **Spring Security** ile güvenlik altyapısı.
 - **Thymeleaf** ile şık ve dinamik bir arayüz.
@@ -12,6 +16,7 @@ FIleupload, **Spring Boot** kullanılarak geliştirilmiş bir dosya yükleme sun
 - **Hazır Frontend Kullanımı** (HTML/CSS/JS gibi bileşenler tamamen alınan frontend temasıyla entegredir).
 
 ## Gereklilikler
+
 - **Java 17** veya daha üstü
 - **Maven**
 - **MySQL**
@@ -20,6 +25,7 @@ FIleupload, **Spring Boot** kullanılarak geliştirilmiş bir dosya yükleme sun
 ---
 
 ## Kurulum
+
 1. **Projeyi Klonlayın**:
    ```bash
    git clone https://github.com/range79/FIle-upload.git
@@ -53,6 +59,7 @@ FIleupload, **Spring Boot** kullanılarak geliştirilmiş bir dosya yükleme sun
 ---
 
 ## Kullanılan Teknolojiler
+
 - **Spring Boot** 3.4.1
 - **Spring Security**
 - **Thymeleaf**
@@ -64,12 +71,36 @@ FIleupload, **Spring Boot** kullanılarak geliştirilmiş bir dosya yükleme sun
 ---
 
 ## Frontend
-Projenin frontend kısmı hazır bir şablondan alınmıştır ve geliştirme yapılmadan backend ile entegre edilmiştir. Frontend şablonu HTML, CSS ve JavaScript teknolojilerini kullanmaktadır. Statik dosyalar `src/main/resources/static` klasörü altında tutulmaktadır.
+
+Projenin frontend kısmı hazır bir şablondan alınmıştır ve geliştirme yapılmadan backend ile entegre edilmiştir. Frontend
+şablonu HTML, CSS ve JavaScript teknolojilerini kullanmaktadır. Statik dosyalar `src/main/resources/static` klasörü
+altında tutulmaktadır.
+
+---
+
+## Uygulamadan Görüntüler
+
+Aşağıda uygulamadan bazı ekran görüntüleri bulunmaktadır:
+
+### Kullanici giris sayfasi
+
+![Kullanici_giris](screenshots/login.png)
+
+### Kullanici kayit sayfasi
+
+![kayit](screenshots/register.png)
+
+### Dosya Yükleme Sayfası
+
+![dosya_yukleme_sayfasi](screenshots/upload.png)
+
 
 ---
 
 ## Testler
+
 Projede birim ve entegrasyon testleri için aşağıdaki komut çalıştırılabilir:
+
 ```bash
 mvn test
 ```
@@ -77,7 +108,9 @@ mvn test
 ---
 
 ## Katkıda Bulunma
+
 Projenize katkıda bulunmak isteyenler için adımlar:
+
 1. Bu projeyi fork edin.
 2. Yeni bir branch oluşturun:
    ```bash
@@ -96,6 +129,7 @@ Projenize katkıda bulunmak isteyenler için adımlar:
 ---
 
 ## Lisans
+
 Bu proje **MIT Lisansı** ile lisanslanmıştır. Detayları aşağıda bulabilirsiniz:
 
 ```plaintext
@@ -107,7 +141,3 @@ Copyright (c) 2023 range79
 
 YAZILIM "OLDUĞU GİBİ" SAĞLANIR, TİCARİLİK, BELİRLİ BİR AMACA UYGUNLUK VEYA HAK İHLALİ OLMADIĞINA DAİR HERHANGİ BİR GARANTİ OLMAKSIZIN, AÇIK YA DA ZIMNİ HİÇBİR GARANTİ VERİLMEZ. YAZILIMDAN YA DA KULLANIMINDAN KAYNAKLANAN HİÇBİR ZARARDAN, YAZARLAR VEYA TELİF HAKKI SAHİPLERİ SORUMLU DEĞİLDİR.
 ```
-
----
-
-Bu taslağı doğrudan kopyalayıp, projenize uygun şekilde özelleştirebilirsiniz. Frontend ile ilgili detayları daha da açık yazmak isterseniz bana tekrar sorabilirsiniz! 😊
