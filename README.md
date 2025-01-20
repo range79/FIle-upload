@@ -120,6 +120,21 @@ Projenize katkıda bulunmak isteyenler için adımlar:
 
 Bu proje **MIT Lisansı** ile lisanslanmıştır. Detayları aşağıda bulabilirsiniz:
 
+
+
+## Projedeki değişiklik günlüğü
+
+1. **Version 1.0.0**
+   - ilk sürüm olduğundan çokta fazla sey eklemedimç
+
+
+
+2. **Version 2.0.0**
+   - bu sürümde file upload servisini düzenledim ve artik dosya yükleniyor ve upload klasörüne yazıyor .
+3. **Version 2.1.0**
+   - Bu sürümde proje daha modüler yapıldı artık user ıle file ayri dizinde 
+
+
 ```plaintext
 MIT Lisansı
 
