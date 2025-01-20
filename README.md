@@ -138,6 +138,3 @@ YAZILIM "OLDUĞU GİBİ" SAĞLANIR, TİCARİLİK, BELİRLİ BİR AMACA UYGUNLUK 
 ```
 
 ---
-
-Bu taslağı doğrudan kopyalayıp, projenize uygun şekilde özelleştirebilirsiniz. Frontend ile ilgili detayları daha da
-açık yazmak isterseniz bana tekrar sorabilirsiniz! 😊
