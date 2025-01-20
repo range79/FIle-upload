@@ -92,13 +92,6 @@ altında tutulmaktadır.
 
 ---
 
-## Testler
-
-Projede birim ve entegrasyon testleri için aşağıdaki komut çalıştırılabilir:
-
-```bash
-mvn test
-```
 
 ---
 
