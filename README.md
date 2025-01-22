@@ -134,7 +134,7 @@ Bu proje **MIT Lisansı** ile lisanslanmıştır. Detayları aşağıda bulabili
 3. **Version 2.1.0**
    - Bu sürümde proje daha modüler yapıldı artık kullanici islemleri ıle dosya işlemleri ayri dizinde. 
 4. **Version 2.2.0**
-   - bu sürümde dosyaları artık ındırebılıyorsunuz ve Exceotion klasoru File ile User arasinda bölübdü.
+   - bu sürümde dosyaları artık ındırebılıyorsunuz ve Exception klasoru File ile User arasinda bölübdü.
 
 ```plaintext
 MIT Lisansı
