@@ -22,8 +22,9 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable)
-                .formLogin(login->login.loginPage("/login").permitAll().usernameParameter("email")
-                        .passwordParameter("password").defaultSuccessUrl("/File-upload"))
+                .formLogin(login->
+                        login.loginPage("/login").permitAll().usernameParameter("email")
+                        .passwordParameter("password").defaultSuccessUrl("/file-upload"))
                 .authorizeHttpRequests(
                         authorizeRequests ->
                                 authorizeRequests
@@ -31,7 +32,9 @@ public class SecurityConfig {
 
                                         .requestMatchers("/register","/forgot-password").permitAll()
 
-                                        .requestMatchers("/File-upload").hasAuthority(Role.User.getAuthority())
+                                        .requestMatchers("/file-upload","/file-download/**")
+                                        .hasAuthority(Role.User.getAuthority())
+
                                         .anyRequest().authenticated());
         return http.build();
     }

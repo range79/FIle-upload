@@ -2,8 +2,8 @@ package com.range.fileupload.user.service.Impl;
 
 import com.range.fileupload.config.MYPasswordEncoder;
 import com.range.fileupload.user.dto.UserDTO;
-import com.range.fileupload.exception.DatabaseException;
-import com.range.fileupload.exception.EmailRegisteredException;
+import com.range.fileupload.user.exception.DatabaseException;
+import com.range.fileupload.user.exception.EmailRegisteredException;
 import com.range.fileupload.user.model.Role;
 import com.range.fileupload.user.model.User;
 import com.range.fileupload.user.repository.UserRepository;

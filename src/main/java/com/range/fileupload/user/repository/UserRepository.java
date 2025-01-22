@@ -1,6 +1,6 @@
 package com.range.fileupload.user.repository;
 
-import com.range.fileupload.exception.UserNotFoundException;
+import com.range.fileupload.user.exception.UserNotFoundException;
 import com.range.fileupload.user.model.User;
 import jakarta.validation.constraints.Email;
 import org.springframework.data.jpa.repository.JpaRepository;

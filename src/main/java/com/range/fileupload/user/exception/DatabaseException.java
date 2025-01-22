@@ -1,4 +1,4 @@
-package com.range.fileupload.exception;
+package com.range.fileupload.user.exception;
 
 public class DatabaseException extends RuntimeException {
     public DatabaseException() {

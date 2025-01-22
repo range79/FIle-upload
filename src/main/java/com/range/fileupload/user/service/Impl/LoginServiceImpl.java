@@ -3,7 +3,7 @@ package com.range.fileupload.user.service.Impl;
 import com.range.fileupload.user.repository.UserRepository;
 import com.range.fileupload.user.service.LoginService;
 import com.range.fileupload.config.MYPasswordEncoder;
-import com.range.fileupload.exception.UserNotFoundException;
+import com.range.fileupload.user.exception.UserNotFoundException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 

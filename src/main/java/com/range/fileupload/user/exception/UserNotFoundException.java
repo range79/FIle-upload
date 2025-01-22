@@ -1,4 +1,4 @@
-package com.range.fileupload.exception;
+package com.range.fileupload.user.exception;
 
 public class UserNotFoundException extends RuntimeException {
   public UserNotFoundException(String name) {

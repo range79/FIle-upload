@@ -147,7 +147,7 @@
 <body>
 <div class="upload-container">
     <h1>Dosya Yükle</h1>
-    <form action="/File-upload" method="post" enctype="multipart/form-data">
+    <form action="/file-upload" method="post" enctype="multipart/form-data">
         <p><strong>Kullanıcı Adınız:</strong> <span th:text="${username}"></span></p>
 
         <div class="form-group">
@@ -163,7 +163,7 @@
         <ul>
             <li th:each="file : ${uploadedFiles}">
                 <span th:text="${file}"></span>
-                <a th:href="@{/File-download(fileName=${file})}" class="download-btn">İndir</a>
+                <a th:href="@{/file-download/(filename=${file})}" class="download-btn">İndir</a>
             </li>
         </ul>
     </div>

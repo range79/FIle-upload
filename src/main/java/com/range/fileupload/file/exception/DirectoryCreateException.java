@@ -1,4 +1,4 @@
-package com.range.fileupload.exception;
+package com.range.fileupload.file.exception;
 
 public class DirectoryCreateException extends RuntimeException {
   public DirectoryCreateException() {

@@ -16,7 +16,7 @@ public class FileUploadController {
     public FileUploadController(FileUploadServiceUploadImpl fileServiceimplUpload) {
         this.fileServiceimpl = fileServiceimplUpload;
     }
-    @GetMapping("/File-upload")
+    @GetMapping("/file-upload")
     public String FileUpload(Model model){
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName();
@@ -24,11 +24,11 @@ public class FileUploadController {
         model.addAttribute("uploadedFiles",fileServiceimpl.getallfiles());
         return "Upload";
     }
-    @PostMapping("/File-upload")
+    @PostMapping("/file-upload")
     public String FileUploadPost(@RequestParam("file") MultipartFile file){
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName();
     fileServiceimpl.uploadFile(file,name);
-    return "redirect:/File-upload";
+    return "redirect:/file-upload";
     }
 }

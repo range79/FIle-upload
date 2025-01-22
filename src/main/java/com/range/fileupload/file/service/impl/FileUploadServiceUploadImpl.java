@@ -54,7 +54,7 @@ public class FileUploadServiceUploadImpl implements FileUploadService {
             }
 
             MyFile myFile = new MyFile();
-            myFile.setFileName(file.getOriginalFilename());
+            myFile.setFileName(uniqueFileName);
             myFile.setData(file.getBytes());
             myFile.setUser(user);
 
