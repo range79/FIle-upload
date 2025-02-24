@@ -1,7 +1,7 @@
 package com.range.fileupload.config;
 
-import com.range.fileupload.user.model.Role;
-import com.range.fileupload.user.service.Impl.UserDetailsServiceImpl;
+import com.range.fileupload.model.Role;
+import com.range.fileupload.service.impl.UserDetailsServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -24,14 +24,13 @@ public class SecurityConfig {
         http.csrf(AbstractHttpConfigurer::disable)
                 .formLogin(login->
                         login.loginPage("/login").permitAll().usernameParameter("email")
-                        .passwordParameter("password").defaultSuccessUrl("/file-upload"))
+                                .passwordParameter("password").defaultSuccessUrl("/file-upload"))
                 .authorizeHttpRequests(
                         authorizeRequests ->
                                 authorizeRequests
-
-
+                                        //withour pass and username
                                         .requestMatchers("/register","/forgot-password").permitAll()
-
+                                        //with user role
                                         .requestMatchers("/file-upload","/file-download/**")
                                         .hasAuthority(Role.User.getAuthority())
 

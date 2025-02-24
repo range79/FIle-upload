@@ -8,3 +8,12 @@ services:
       - 'MYSQL_USER=range'
     ports:
       - '3306:3306'
+
+  mongodb:
+    image: 'mongo:latest'
+    environment:
+      - 'MONGO_INITDB_DATABASE=testdb'
+      - 'MONGO_INITDB_ROOT_PASSWORD=somepass'
+      - 'MONGO_INITDB_ROOT_USERNAME=range'
+    ports:
+      - '27017:27017'

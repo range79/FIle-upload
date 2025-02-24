@@ -6,14 +6,16 @@ spring:
     encoding: UTF-8
   datasource:
     url: jdbc:mysql://mysql:3306/testdb
-    hikari:
-      username: range
-      password: somepass
+    username: range
+    password: somepass
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
   servlet:
     multipart:
       enabled: true
       max-file-size: 1000MB
       max-request-size: 1000MB
+  data:
+    mongodb:
+      uri: mongodb://range:somepass@localhost:27017/testdb

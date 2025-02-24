@@ -135,6 +135,10 @@ Bu proje **MIT Lisansı** ile lisanslanmıştır. Detayları aşağıda bulabili
    - Bu sürümde proje daha modüler yapıldı artık kullanici islemleri ıle dosya işlemleri ayri dizinde. 
 4. **Version 2.2.0**
    - bu sürümde dosyaları artık ındırebılıyorsunuz ve Exception klasoru File ile User arasinda bölübdü.
+5. **Version 3.0.0**
+   - bu sürümde fıle user arasında bölünmeyı kaldırdım çok kafa karıştırıcı oldugundan 
+   - mongo db eklendı(dosyalar artık mongodbye kayıt ediliyor)
+   - Dosyalar artik indirilebiliyor tam olarak
 
 ```plaintext
 MIT Lisansı
